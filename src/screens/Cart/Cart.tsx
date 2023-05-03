@@ -1,17 +1,26 @@
+import React, { useContext } from "react";
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View, SafeAreaView } from "react-native";
+import { StyleSheet, Text, View, SafeAreaView, ScrollView } from "react-native";
+import { CartContext } from "../../context/CartContext";
+import CartItem from "../../components/CartItem/CartItem";
 
 const Cart = () => {
   //const route = useRoute();
   //const { id } = route.params as ParamsProps;
+  const { cart } = useContext(CartContext);
 
   return (
-    <SafeAreaView style={styles.container}>
-      <View>
-        <Text>teste</Text>
-        <StatusBar style="auto" translucent={true} />
+    <SafeAreaView>
+    <ScrollView>
+      <View style={styles.container}>
+        {cart?.map((cart) => (
+          <View key={cart.id}>
+            <CartItem item={cart} />
+          </View>
+        ))}
       </View>
-    </SafeAreaView>
+    </ScrollView>
+  </SafeAreaView>
   );
 };
 
