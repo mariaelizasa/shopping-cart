@@ -15,8 +15,8 @@ export const styles = StyleSheet.create({
 
   infoContainer: {
     padding: 10,
-    backgroundColor: "#FAEEFF",
-    borderRadius: 10,
+    borderTopWidth: 0.5,
+    borderColor: "#d3d3d3"
   },
 
   image: {

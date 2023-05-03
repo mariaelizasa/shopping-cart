@@ -8,10 +8,7 @@ import Cart from "../screens/Cart/Cart";
 export function StackRoutes() {
   return (
     <Navigator>
-      <Screen
-        name="Products"
-        component={ProductsList}
-      />
+      <Screen name="Products" component={ProductsList} />
       <Screen name="Cart" component={Cart} />
     </Navigator>
   );

@@ -1,8 +1,10 @@
-
-import { Routes } from "./src/routes"
+import { Routes } from "./src/routes";
+import CartContextProvider from "./src/context/CartContext";
 
 export default function App() {
   return (
-    <Routes />
+    <CartContextProvider>
+      <Routes />
+    </CartContextProvider>
   );
 }

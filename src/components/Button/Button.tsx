@@ -1,6 +1,6 @@
 import React from "react";
-import { ButtonProps } from "../../types/Button";
-import { View, Pressable, Text } from "react-native";
+import { ButtonProps } from "../../@types/Button";
+import { Pressable, Text } from "react-native";
 import { styles } from "./style";
 
 const Button = ({ title, onPress }: ButtonProps) => {
