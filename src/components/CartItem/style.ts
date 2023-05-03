@@ -3,8 +3,7 @@ const { width } = Dimensions.get("window");
 
 export const styles = StyleSheet.create({
   container: {
-    borderRadius: 3,
-    marginBottom: 15,
+    borderRadius: 20,
     backgroundColor: "white",
     shadowRadius: 1,
     shadowOpacity: 0.1,
@@ -15,9 +14,9 @@ export const styles = StyleSheet.create({
   },
 
   infoContainer: {
-    borderTopWidth: 0.5,
-    borderColor: "gray",
     padding: 10,
+    backgroundColor: "#FAEEFF",
+    borderRadius: 10,
   },
 
   image: {
@@ -27,7 +26,7 @@ export const styles = StyleSheet.create({
   },
   title: {
     textAlign: "center",
-
+    fontSize: 10,
     padding: 5,
   },
   price: {
