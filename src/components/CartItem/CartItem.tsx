@@ -1,14 +1,8 @@
 import React from "react";
 
 import { Text, View, Image } from "react-native";
-
+import { CartItemProps } from "../../types/CartItem";
 import { styles } from "./style";
-
-type CartItemProps = {
-  title: string;
-  price: string;
-  image: string;
-};
 
 const CartItem = ({ title, price, image }: CartItemProps) => {
   return (

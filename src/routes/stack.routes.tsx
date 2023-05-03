@@ -11,15 +11,6 @@ export function StackRoutes() {
       <Screen
         name="Products"
         component={ProductsList}
-        options={{
-          headerRight: () => (
-            <Button
-              onPress={() => console.log("teste")}
-              title="Cart"
-              color="#ec5dff"
-            />
-          ),
-        }}
       />
       <Screen name="Cart" component={Cart} />
     </Navigator>

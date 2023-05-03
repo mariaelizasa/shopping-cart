@@ -2,7 +2,7 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, SafeAreaView } from "react-native";
 
-const Cart: React.FC = () => {
+const Cart = () => {
   return (
     <SafeAreaView style={styles.container}>
       <View>

@@ -5,9 +5,11 @@ import api from "../../services/api";
 import CartItem from "../../components/CartItem/CartItem";
 import { styles } from "./style";
 import Button from "../../components/Button/Button";
+import { useNavigation } from "@react-navigation/native";
 
-const ProductsList: React.FC = ({ navigation }) => {
+const ProductsList = () => {
   const [products, setProducts] = useState<Products[]>();
+  const navigation = useNavigation();
 
   useEffect(() => {
     api
@@ -31,7 +33,7 @@ const ProductsList: React.FC = ({ navigation }) => {
               />
               <Button
                 title="Add"
-                onPress={() => console.log("teste")}
+                onPress={() => navigation.navigate("Cart")}
               ></Button>
             </View>
           ))}

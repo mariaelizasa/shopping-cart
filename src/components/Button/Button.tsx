@@ -1,12 +1,7 @@
 import React from "react";
-
+import { ButtonProps } from "../../types/Button";
 import { View, Pressable, Text } from "react-native";
 import { styles } from "./style";
-
-type ButtonProps = {
-  title: string;
-  onPress: (params: any) => any;
-};
 
 const Button = ({ title, onPress }: ButtonProps) => {
   return (
