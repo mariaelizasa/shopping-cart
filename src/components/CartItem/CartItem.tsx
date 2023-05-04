@@ -9,7 +9,8 @@ interface CartProps {
   item: CartItemProps;
 }
 const CartItem = ({ item }: CartProps) => {
-  const { removeItemCart, clearCart } = useContext(CartContext);
+  const { removeItemCart, increaseItem, decreaseItem } =
+    useContext(CartContext);
   const { id, image, amount, title, price } = item;
 
   return (
@@ -23,11 +24,15 @@ const CartItem = ({ item }: CartProps) => {
             }}
           />
         </View>
-
         <View style={styles.infoContainer}>
           <Text style={styles.title}>{title}</Text>
           <Text style={styles.price}>{`R$${price}`}</Text>
+          <Text style={styles.quantity}>{`Quantidade: ${amount}`}</Text>
           <Button title="Remover" onPress={() => removeItemCart(id)}></Button>
+          <View style={styles.buttonContainer}>
+            <Button title="-" onPress={() => decreaseItem(item)}></Button>
+            <Button title="+" onPress={() => increaseItem(item)}></Button>
+          </View>
         </View>
       </View>
     </View>

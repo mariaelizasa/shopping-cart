@@ -4,6 +4,7 @@ import { Text, View, Image } from "react-native";
 import { styles } from "./style";
 import Button from "../Button/Button";
 import { Product } from "../../@types/Product";
+import { useNavigation } from "@react-navigation/native";
 
 interface ProductProps {
   product: Product;
@@ -12,7 +13,7 @@ interface ProductProps {
 const ProductItem = ({ product }: ProductProps) => {
   const { id, image, title, price } = product;
   const { addItemCart } = useContext(CartContext);
-  
+  const navigation = useNavigation();
 
   return (
     <View style={styles.container}>
@@ -30,7 +31,10 @@ const ProductItem = ({ product }: ProductProps) => {
         <Text style={styles.price}>{`R$${price}`}</Text>
         <Button
           title="Adicionar"
-          onPress={() => addItemCart(product, id)}
+          onPress={() => {
+            navigation.navigate("Cart");
+            addItemCart(product, id);
+          }}
         ></Button>
       </View>
     </View>

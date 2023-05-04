@@ -8,6 +8,7 @@ export const styles = StyleSheet.create({
     shadowRadius: 1,
     shadowOpacity: 0.1,
     width: (width - 35) / 2,
+    marginBottom: 15,
   },
   imageContainer: {
     padding: 10,

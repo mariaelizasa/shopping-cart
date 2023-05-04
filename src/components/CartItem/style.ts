@@ -5,6 +5,7 @@ export const styles = StyleSheet.create({
   container: {
     borderRadius: 20,
     backgroundColor: "white",
+    marginBottom: 20,
     shadowRadius: 1,
     shadowOpacity: 0.1,
     width: (width - 35) / 2,
@@ -16,7 +17,7 @@ export const styles = StyleSheet.create({
   infoContainer: {
     padding: 10,
     borderTopWidth: 0.5,
-    borderColor: "#d3d3d3"
+    borderColor: "#d3d3d3",
   },
 
   image: {
@@ -32,5 +33,15 @@ export const styles = StyleSheet.create({
   price: {
     textAlign: "center",
     color: "gray",
+  },
+  quantity: {
+    fontSize: 13,
+    margin: 10,
+    textAlign: "center",
+  },
+  buttonContainer: {
+    justifyContent: "center",
+    display: "flex",
+    flexDirection: "row",
   },
 });
