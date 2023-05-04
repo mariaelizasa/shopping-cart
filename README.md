@@ -1,7 +1,7 @@
 <h1 align="center">Shopping Cart 💖<h1/>
 
 <p align="center"> 
-<img src="https://user-images.githubusercontent.com/49694866/236104419-a3f44736-2ed7-4ed0-b811-c9adc88a3445.jpg" alt="cart" />
+<img src="https://user-images.githubusercontent.com/49694866/236104419-a3f44736-2ed7-4ed0-b811-c9adc88a3445.jpg" alt="cart" width=350" height="800"/>
 </p>
 
 ## Como executar / How to run
