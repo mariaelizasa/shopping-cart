@@ -4,6 +4,9 @@
 <img src="https://user-images.githubusercontent.com/49694866/236104419-a3f44736-2ed7-4ed0-b811-c9adc88a3445.jpg" alt="cart" width=350" height="800"/>
 </p>
 
+
+https://user-images.githubusercontent.com/49694866/236268589-773bc722-84b2-4064-ae71-74262b73067f.mp4
+
 ## Como executar / How to run
 
 
