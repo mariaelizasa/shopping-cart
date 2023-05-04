@@ -9,7 +9,7 @@ const Cart = () => {
   const { cart, clearCart } = useContext(CartContext);
 
   return (
-    <SafeAreaView>
+    <SafeAreaView accessible={true} accessibilityLabel="Page Cart">
       <ScrollView>
         <View style={styles.button}>
           <Button title="Delete All 😭" onPress={() => clearCart()}></Button>

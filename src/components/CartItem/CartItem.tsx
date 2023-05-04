@@ -14,7 +14,7 @@ const CartItem = ({ item }: CartProps) => {
   const { id, image, amount, title, price } = item;
 
   return (
-    <View>
+    <View accessible={true} accessibilityLabel="Cart Item">
       <View style={styles.container}>
         <View style={styles.imageContainer}>
           <Image

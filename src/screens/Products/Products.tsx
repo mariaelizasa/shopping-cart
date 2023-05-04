@@ -21,7 +21,7 @@ const ProductsList = () => {
   }, []);
 
   return (
-    <SafeAreaView>
+    <SafeAreaView accessible={true} accessibilityLabel="Product Cart">
       <ScrollView>
         <View style={styles.container}>
           <Text style={styles.title}>Welcome to my shopping! 💖</Text>

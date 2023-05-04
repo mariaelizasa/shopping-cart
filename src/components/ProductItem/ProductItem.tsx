@@ -16,7 +16,11 @@ const ProductItem = ({ product }: ProductProps) => {
   const navigation = useNavigation();
 
   return (
-    <View style={styles.container}>
+    <View
+      style={styles.container}
+      accessible={true}
+      accessibilityLabel="Product Item!"
+    >
       <View style={styles.imageContainer}>
         <Image
           style={styles.image}
