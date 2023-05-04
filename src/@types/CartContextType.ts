@@ -1,6 +1,6 @@
 import { Product } from "./Product";
 
-export type CartContextProps = {
+export interface CartContextProps  {
   cart: Product[];
   addItemCart: (product: Product, id: number) => void;
   removeItemCart: (id: number) => void;
