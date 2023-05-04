@@ -12,7 +12,7 @@ const Cart = () => {
     <SafeAreaView>
       <ScrollView>
         <View style={styles.button}>
-          <Button title="Apagar tudo" onPress={() => clearCart()}></Button>
+          <Button title="Delete All 😭" onPress={() => clearCart()}></Button>
         </View>
         <View style={styles.container}>
           {cart?.map((cart) => (

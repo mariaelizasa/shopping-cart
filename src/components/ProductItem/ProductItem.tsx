@@ -30,7 +30,7 @@ const ProductItem = ({ product }: ProductProps) => {
         <Text style={styles.title}>{title}</Text>
         <Text style={styles.price}>{`R$${price}`}</Text>
         <Button
-          title="Adicionar"
+          title="Add 🌸"
           onPress={() => {
             navigation.navigate("Cart");
             addItemCart(product, id);

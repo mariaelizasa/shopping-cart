@@ -27,12 +27,12 @@ const CartItem = ({ item }: CartProps) => {
         <View style={styles.infoContainer}>
           <Text style={styles.title}>{title}</Text>
           <Text style={styles.price}>{`R$${price}`}</Text>
-          <Text style={styles.quantity}>{`Quantidade: ${amount}`}</Text>
-          <Button title="Remover" onPress={() => removeItemCart(id)}></Button>
+          <Button title="Remove" onPress={() => removeItemCart(id)}></Button>
           <View style={styles.buttonContainer}>
             <Button title="-" onPress={() => decreaseItem(item)}></Button>
             <Button title="+" onPress={() => increaseItem(item)}></Button>
           </View>
+          <Text style={styles.quantity}>{`Amount: ${amount}`}</Text>
         </View>
       </View>
     </View>

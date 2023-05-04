@@ -8,4 +8,10 @@ export const styles = StyleSheet.create({
     padding: 10,
     flexDirection: "row",
   },
+  title: {
+    padding: 30,
+    textAlign: "center",
+    width: "100%",
+    fontSize: 16,
+  },
 });

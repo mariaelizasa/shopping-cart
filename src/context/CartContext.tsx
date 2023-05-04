@@ -101,7 +101,6 @@ const CartContextProvider = ({ children }: CartContextProviderProps) => {
         clearCart,
         increaseItem,
         decreaseItem,
-        total,
       }}
     >
       {children}

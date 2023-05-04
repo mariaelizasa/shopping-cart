@@ -24,6 +24,7 @@ const ProductsList = () => {
     <SafeAreaView>
       <ScrollView>
         <View style={styles.container}>
+          <Text style={styles.title}>Welcome to my shopping! 💖</Text>
           {products?.map((product, index) => (
             <View key={product.id}>
               <ProductItem product={product} key={product.id} />
