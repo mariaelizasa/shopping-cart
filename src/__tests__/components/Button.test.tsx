@@ -1,9 +1,9 @@
 import React from "react";
-import { render, fireEvent } from "@testing-library/react-native";
+import { render, fireEvent, act } from "@testing-library/react-native";
 import Button from "../../components/Button/Button";
 
 describe("Button", () => {
-  test("show the title", () => {
+  test("should show the title", () => {
     const { getByText } = render(
       <Button title={"test"} onPress={() => console.log("test")} />
     );
@@ -11,7 +11,7 @@ describe("Button", () => {
     expect(el).toBeTruthy();
   });
 
-  test("calls onPress when pressed", () => {
+  test("should calls onPress when pressed", () => {
     const onPress = jest.fn();
     const { debug, getByText } = render(
       <Button title={"button"} onPress={onPress} />
@@ -21,5 +21,16 @@ describe("Button", () => {
     fireEvent.press(button);
     expect(onPress).toHaveBeenCalled();
   });
-;
+  test("should emit click event correctly", () => {
+    const onPress = jest.fn();
+    const { debug, getByText } = render(
+      <Button title={"button"} onPress={onPress} />
+    );
+    debug();
+    const button = getByText("button");
+    act(() => {
+      fireEvent.press(button);
+      expect(onPress).toHaveBeenCalledTimes(1);
+    });
+  });
 });

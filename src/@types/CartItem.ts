@@ -1,6 +1,6 @@
 import { Product } from "./Product";
 
 export default interface CartItemProps extends Product {
-  id: string;
+  id: number;
   amount: number;
 }
