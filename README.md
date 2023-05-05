@@ -5,8 +5,6 @@
 </p>
 
 
-https://user-images.githubusercontent.com/49694866/236268589-773bc722-84b2-4064-ae71-74262b73067f.mp4
-
 ## Como executar / How to run
 
 
