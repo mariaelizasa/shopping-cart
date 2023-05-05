@@ -31,6 +31,7 @@ npm start
 ```
 ├── assets
 ├── src
+│   └──__tests__
 │   └──css
 │       ├──@types
 │   └──assets
